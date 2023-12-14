@@ -1,0 +1,17 @@
+    map<char, int> mp;
+
+        for (auto i : a) {
+            mp[i]++;
+        }
+
+        for (auto x : b) {
+            mp[x]--;
+        }
+
+        for (auto y : mp) {
+            if (y.second != 0) {
+                return false;
+            }
+        }
+
+        return true;
